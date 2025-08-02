@@ -53,13 +53,13 @@ app.use(passport.session());
 const cors = require("cors");
 app.use(
   cors({
-    origin: "https://phibitech.onrender.com", // frontend URL
+    origin: "http://127.0.0.1:3000", // frontend URL
     credentials: true, // allow credentials (cookies, sessions)
   })
 );
 
 // Routes
-app.use("/api/blogposts", require("./src/routes/Blog/blogpostRoutes"));
+app.use("/api/blogposts", require("./src/routes/blog/blogpostRoutes"));
 app.use("/api/authors", require("./src/routes/users/userRoutes"));
 app.use("/api/jobs", require("./src/routes/jobs/jobRoutes"));
 app.use("/api/courses", require("./src/routes/Courses/courseRoutes"));
