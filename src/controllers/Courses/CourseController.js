@@ -7,7 +7,7 @@ const asyncHandler = require("../../middleware/async");
 // @route   GET /api/v1/courses
 // @access  Public
 exports.getCourses = asyncHandler(async (req, res, next) => {
-  const courses = await Course.find().sort({ startDate: 1 });
+  const courses = await Course.find().sort({ startDate: -1 });
 
   res.status(200).json({
     success: true,
