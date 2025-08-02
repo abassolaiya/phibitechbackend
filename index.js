@@ -59,7 +59,7 @@ app.use(
 );
 
 // Routes
-app.use("/api/blogposts", require("./src/routes/blog/blogpostRoutes"));
+app.use("/api/blogposts", require("./src/routes/Blog/BlogPostRoutes"));
 app.use("/api/authors", require("./src/routes/users/userRoutes"));
 app.use("/api/jobs", require("./src/routes/jobs/jobRoutes"));
 app.use("/api/courses", require("./src/routes/Courses/courseRoutes"));
