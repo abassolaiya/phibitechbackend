@@ -53,7 +53,7 @@ app.use(passport.session());
 const cors = require("cors");
 app.use(
   cors({
-    origin: "https://phibitech.onrender.com", // frontend URL
+    origin: "https://phibitech.com", // frontend URL
     credentials: true, // allow credentials (cookies, sessions)
   })
 );
