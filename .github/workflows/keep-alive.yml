@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Ping your server
         run: |
-          curl -s https://phibitech.com > /dev/null
+          curl -s https://phibitechbackend.onrender.com > /dev/null
