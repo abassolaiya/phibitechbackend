@@ -65,6 +65,9 @@ app.use("/api/jobs", require("./src/routes/jobs/jobRoutes"));
 app.use("/api/courses", require("./src/routes/Courses/courseRoutes"));
 app.use("/api/register", require("./src/routes/Courses/registrations"));
 app.use("/api/consultations", require("./src/routes/consultationRoutes"));
+app.get("/health", (req, res) => {
+  res.send("OK");
+});
 
 // Auth Routes
 app.get(

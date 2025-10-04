@@ -2,7 +2,7 @@ name: Keep Server Alive
 
 on:
   schedule:
-    - cron: "*/13 * * * *"   # every 13 minutes
+    - cron: "*/5 * * * *"   # every 5 minutes
   workflow_dispatch:        # allow manual trigger too
 
 jobs:
@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Ping your server
         run: |
-          curl -s https://phibitechbackend.onrender.com > /dev/null
+          run: curl -s https://phibitechbackend.onrender.com/health > /dev/null
