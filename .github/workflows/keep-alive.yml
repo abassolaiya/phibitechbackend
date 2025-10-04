@@ -10,5 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping your server
-        run: |
-          run: curl -s https://phibitechbackend.onrender.com/health > /dev/null
+        run: curl -s https://phibitechbackend.onrender.com/health > /dev/null
